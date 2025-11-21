@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pangolin</title>
+  <link rel="icon" type="image/png" href="assets/hlogo.jpg" />
+  <link rel="stylesheet" href="solution.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+  <script src="nav.js"></script>
+<!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav + Search wrapper -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+<li class="dropdown">
+  <a href="solution.html">Solutions</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Platform Features</h4>
+
+      <a href="wage.html" class="mega-link">
+        <span class="icon">💸</span>
+        <div class="text">
+          <div class="title">On-Time Wage Access</div>
+          <div class="desc">Digitally disburse wages directly.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-2" class="mega-link">
+        <span class="icon">🚑</span>
+        <div class="text">
+          <div class="title">Emergency Microloans</div>
+          <div class="desc">Low-interest loans via the app.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">📅</span>
+        <div class="text">
+          <div class="title">Digital Leave Requests</div>
+          <div class="desc">Leave requests without fear or bias.</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <h4>Productivity & Trust</h4>
+
+      <a href="solution.html#feature-4" class="mega-link">
+        <span class="icon">⏱️</span>
+        <div class="text">
+          <div class="title">Attendance Tracking</div>
+          <div class="desc">QR or biometric clock-ins, real-time logs.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-5" class="mega-link">
+        <span class="icon">🏪</span>
+        <div class="text">
+          <div class="title">Cash-Out via Local Vendors</div>
+          <div class="desc">Withdraw wages without high fees.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-6" class="mega-link">
+        <span class="icon">🤝</span>
+        <div class="text">
+          <div class="title">Job Matching Tool</div>
+          <div class="desc">Match to new jobs via verified history.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</li>
+
+
+
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="about.html">About Us</a></li>
+
+          <li class="dropdown">
+  <a href="#">Services</a>
+  <div class="dropdown-mega">
+    <div class="column">
+      <h4>Overview</h4>
+      <p>Learn how to support industries with On-Demand Pay.</p>
+      <hr class="dropdown-separator" />
+      <a href="#">Hospitals & Healthcare</a>
+      <a href="#">Retail</a>
+      <a href="#">Restaurants & QSR</a>
+      <a href="#">Travel & Hospitality</a>
+      <a href="#">Franchise</a>
+      <a href="#">Grocers & Supermarkets</a>
+      <a href="#">Call & Contact Centers</a>
+      <a href="#">Manufacturing</a>
+      <a href="#">Public Sector</a>
+    </div>
+    <div class="column"></div>
+  </div>
+</li>
+
+
+
+          <li class="dropdown">
+            <a href="#">Help</a>
+            <div class="dropdown-mega">
+              <div class="column">
+                <a href="#">PIN Reset</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Nagad Sheba</a>
+                <a href="#">Distributor locator</a>
+              </div>
+              <div class="column">
+                <a href="#">Limit and Charges</a>
+                <a href="#">Web Self Care</a>
+                <a href="#">Merchant locator</a>
+                <a href="#">Discontinued Uddokta</a>
+              </div>
+              <div class="column">
+                <a href="#">Nagad Transaction Calculator</a>
+                <a href="#">Virtual Number</a>
+                <a href="#">Uddokta locator</a>
+                <a href="#">Discontinued Distributor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<section class="solution-hero">
+  <div class="solution-hero-container">
+    <div class="solution-hero-text">
+      <h1>How to Reduce the Employee Turnover Rate at Your Company</h1>
+    </div>
+    <div class="solution-hero-image">
+      <img src="assets/sbro.png" alt="3 Ways To Reduce Employee Turnover"/>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="solution-detailed">
+  <div class="solution-detailed-container">
+    <h2 class="solution-detailed-title">Pangolin – Detailed Solutions</h2>
+
+   <!-- Feature 1 -->
+<div class="solution-feature" id="feature-1">
+  <div class="solution-feature-number">1</div>
+  <div class="solution-feature-content">
+    <h3><a href="wage.html" class="feature-title">On-Time Wage Access</a></h3>
+    <p><strong>What it is:</strong> A payroll system that ensures salaries are disbursed on time, every time, without deductions or manipulation. Salaries flow digitally from the company account to the worker’s Pangolin wallet, reducing reliance on cash-handling middlemen.</p>
+    <p><strong>Why it matters for workers:</strong> Delayed or cut wages cause stress, debt cycles, and force workers to borrow at predatory rates. With Pangolin, workers can plan their family expenses, pay bills, and avoid loan sharks.</p>
+    <p><strong>Why it matters for companies:</strong> On-time wages build trust, reduce disputes, and improve retention and productivity. Factories also gain regulatory compliance and digital payroll records for audits and reporting.</p>
+  </div>
+</div>
+
+<!-- Feature 2 -->
+<div class="solution-feature" id="feature-2">
+  <div class="solution-feature-number">2</div>
+  <div class="solution-feature-content">
+    <h3>Emergency Microloans</h3>
+    <p><strong>What it is:</strong> Instant, small, low-interest loans available directly through the Pangolin app when salaries are delayed or emergencies strike (medical, school fees, family needs).</p>
+    <p><strong>Why it matters for workers:</strong> Workers usually borrow from local moneylenders at 120–200% interest annually. Pangolin loans are ethical, transparent, and repayable directly from upcoming wages. This reduces exploitation and protects dignity.</p>
+    <p><strong>Why it matters for companies:</strong> Financially stable workers are less absent, more focused, and loyal. This feature prevents strikes and walkouts when salaries are delayed, giving employers operational continuity.</p>
+  </div>
+</div>
+
+<!-- Feature 3 -->
+<div class="solution-feature" id="feature-3">
+  <div class="solution-feature-number">3</div>
+  <div class="solution-feature-content">
+    <h3>Digital Leave Requests</h3>
+    <p><strong>What it is:</strong> A mobile feature where workers can apply for leave using ready-made templates (sick leave, family emergency, maternity, etc.) or directly call their supervisor from within the app.</p>
+    <p><strong>Why it matters for workers:</strong> Many workers fear asking for leave verbally due to power dynamics with supervisors. Digital requests create a paper trail, ensuring fairness and reducing favoritism.</p>
+    <p><strong>Why it matters for companies:</strong> HR gains structured leave records, reducing confusion and last-minute absenteeism. Transparent leave policies improve morale and reduce disputes.</p>
+  </div>
+</div>
+
+<!-- Feature 4 -->
+<div class="solution-feature" id="feature-4">
+  <div class="solution-feature-number">4</div>
+  <div class="solution-feature-content">
+    <h3>Attendance & Productivity Tracking</h3>
+    <p><strong>What it is:</strong> Workers clock in/out via QR code scans or biometric devices. Break times and overtime are logged automatically, feeding into payroll and performance dashboards.</p>
+    <p><strong>Why it matters for workers:</strong> Workers can see their actual working hours, overtime, and breaks in real time — ensuring they are paid correctly. No more manipulation or undercounting.</p>
+    <p><strong>Why it matters for companies:</strong> Managers gain accurate attendance and productivity data. This improves workforce planning, reduces fraud (ghost workers), and ensures fair overtime payouts.</p>
+  </div>
+</div>
+
+<!-- Feature 5 -->
+<div class="solution-feature" id="feature-5">
+  <div class="solution-feature-number">5</div>
+  <div class="solution-feature-content">
+    <h3>Cash-Out via Local Vendors</h3>
+    <p><strong>What it is:</strong> A network of trusted community shops and vendors that act as withdrawal points. Workers can cash out wages without ATMs, bank accounts, or high mobile wallet fees.</p>
+    <p><strong>Why it matters for workers:</strong> Banking exclusion is common in rural Bangladesh. With Pangolin, workers can access their full salary easily, avoiding the 8–10% cash-out fees from mobile money operators.</p>
+    <p><strong>Why it matters for companies:</strong> Factories avoid bottlenecks of cash distribution days and reduce risks of carrying large sums of cash. It also boosts goodwill as workers see real savings in their take-home pay.</p>
+  </div>
+</div>
+
+<!-- Feature 6 -->
+<div class="solution-feature" id="feature-6">
+  <div class="solution-feature-number">6</div>
+  <div class="solution-feature-content">
+    <h3>Job Matching Tool</h3>
+    <p><strong>What it is:</strong> A platform feature connecting workers to job opportunities in partner factories/companies, based on skill, location, and experience.</p>
+    <p><strong>Why it matters for workers:</strong> Many workers find jobs through informal, exploitative middlemen. Pangolin provides a direct, transparent channel, empowering workers to negotiate better opportunities.</p>
+    <p><strong>Why it matters for companies:</strong> Employers gain access to a reliable talent pool with verified work history, reducing recruitment costs and turnover.</p>
+  </div>
+</div>
+
+    <!-- Features End -->
+
+    <!-- Strategic Initiatives -->
+    <div class="solution-initiatives">
+      <h3>🎯 Strategic Initiatives</h3>
+      <ul>
+        <li><strong>Ensure Fair Wages:</strong> Create a transparent wage ecosystem that prevents theft, cuts, or manipulation. Builds worker dignity and international compliance reputation for factories.</li>
+        <li><strong>Reduce Turnover & Improve Productivity:</strong> Timely wages + microloans = less stress, less absenteeism, more output. Helps companies save money on rehiring and training.</li>
+        <li><strong>Build Trust Between Owners & Workers:</strong> Both sides see the same data (wages, hours, leave), reducing disputes. Increases workplace harmony and reduces conflict-driven slowdowns.</li>
+        <li><strong>Empower Worker Dignity:</strong> Workers gain financial independence and a voice in workplace decisions. Strengthens social reputation of companies (good for global buyers & NGOs).</li>
+        <li><strong>Strengthen HR for Companies:</strong> One integrated system for payroll, attendance, leave, compliance, and loans. Saves HR departments time and money, while improving regulatory compliance.</li>
+      </ul>
+      <p class="solution-initiatives-note">⚡️ Together, these solutions make Pangolin more than just a payments tool — it’s a worker dignity + productivity platform designed for Bangladesh and scalable across Asia.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="faq-section">
+  <div class="container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does Pangolin ensure on-time wage access?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        Pangolin automates salary disbursement digitally from the company account to the worker's wallet, eliminating delays and manual cash handling.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What are emergency microloans and how do they work?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        Emergency microloans are small, instant loans with low interest that workers can access via the app during salary delays or urgent needs, repaid directly from future wages.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can workers request leave using Pangolin?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        Workers apply for leave digitally via templates for sick leave, family emergencies, maternity, etc., or call supervisors directly through the app.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What methods does Pangolin use to track attendance and productivity?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        Workers clock in/out with QR scans or biometric devices; breaks and overtime are logged automatically, ensuring accurate payroll and performance tracking.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do workers cash out wages without bank accounts?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        Pangolin partners with local vendors where workers can withdraw wages easily, avoiding high fees and banking exclusions common in rural areas.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does the job matching tool help workers find better jobs?
+        <span class="faq-icon">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+        The tool connects workers directly to partner factories based on skills and experience, bypassing exploitative middlemen and improving job opportunities.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+    .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* FAQ Section Styles */
+  .faq-section {
+    background: #f8f9fb;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+    color: #0a1633;
+  }
+  .faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0a1633;
+  }
+  .faq-icon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c3e50;
+  }
+  .faq-item.active .faq-answer {
+    max-height: 300px;
+    margin-top: 10px;
+  }
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      padding: 0 15px;
+    }
+    .section-title, .faq-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .solution-item h3 {
+      font-size: 1.25rem;
+    }
+    .solution-item p, .strategic-initiatives ul li, .strategic-initiatives p,
+    .faq-question, .faq-answer {
+      font-size: 0.95rem;
+    }
+    .strategic-initiatives h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .faq-question {
+      font-size: 1rem;
+    }
+    .faq-icon {
+      font-size: 1rem;
+    }
+    .solution-item p, .strategic-initiatives ul li, .strategic-initiatives p {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle('active');
+    });
+  });
+</script>
+
+
+
+<section class="why-choose">
+  <div class="container">
+    <h2>See Why Top Companies Choose Pangolin</h2>
+    <button class="talk-btn">Let's Talk</button>
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/empower.png" alt="Empowering Icon" />
+          <h3>Empowering for Employees</h3>
+        </div>
+        <p>Greater financial control with access to up to 100% of their Pangolin balance to meet the challenges of unexpected financial disruptions.</p>
+        <hr>
+        <p>Improved planning with visibility to withdrawals and earned pay in one easy-to-use app.</p>
+        <hr>
+        <p>No need for a pre-existing checking or savings account.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/secure.png" alt="Secure Icon" />
+          <h3>Simple and Secure for Employers</h3>
+        </div>
+        <p>No change to payroll processes — Pangolin compliantly handles it all.</p>
+        <hr>
+        <p>Seamless integration with HCM, payroll, banking and benefit applications.</p>
+        <hr>
+        <p>Enterprise-grade platform that keeps data private and the service running so it's always there when your employees need it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Chatbot: Rollie -->
+<div class="chatbot-container" id="chatbot">
+  <div class="chatbot-header">
+    <span>Rollie 🤖</span>
+    <button id="chatbot-close">&times;</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages">
+    <div class="message bot">Hi! I’m Rollie, your assistant here.</div>
+  </div>
+  <div class="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Type a message..." />
+    <button id="chatbot-send">➤</button>
+  </div>
+</div>
+
+<!-- Bot Icon -->
+<div id="chatbot-icon">
+  <img src="assets/bot.png" alt="Chatbot Icon" height="100px"/>
+</div>
+
+<script src="chatbot.js"></script>
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Pangolin Logo" class="footer-logo" />
+      <p><strong>Pangolin HQ</strong><br>
+      Savar, Dhaka<br>
+      Bangladesh</p>
+      <a href="#" class="footer-contact">Contact us ></a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Impact</a>
+        <a href="#">Careers</a>
+        <a href="#">Awards</a>
+        <a href="#">Security</a>
+      </div>
+      <div>
+        <h4>For Employers</h4>
+        <a href="#">Overview</a>
+        <a href="#">Why Pangolin</a>
+        <a href="#">Clients</a>
+        <a href="#">Industries</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div>
+        <h4>Platform & Features</h4>
+        <a href="#">Pangolin Platform</a>
+        <a href="#">Cycle</a>
+        <a href="#">Reward</a>
+        <a href="#">Tips</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Calculator</a>
+        <a href="#">Education</a>
+        <a href="#">On-Demand Pay</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

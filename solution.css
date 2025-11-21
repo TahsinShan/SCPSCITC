@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; 
+}
+
+.solution-hero {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.solution-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.solution-hero-text {
+  flex: 1 1 45%;
+}
+
+.solution-hero-text h1 {
+  font-size: 2.5rem;
+  color: #0a1633;
+  line-height: 1.3;
+  margin: 0;
+
+}
+
+.solution-hero-image {
+  flex: 1 1 45%;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.solution-hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.solution-detailed {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  color: #0a1633;
+}
+
+.solution-detailed-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.solution-detailed-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.solution-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.solution-feature-number {
+  min-width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #fdece5, #fff5f0);
+  color: #ef5e34;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.solution-feature-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.solution-feature-content p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.solution-initiatives {
+  margin-top: 60px;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.solution-initiatives h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.solution-initiatives ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.solution-initiatives li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.solution-initiatives-note {
+  font-style: italic;
+  color: #333;
+}
+
+.solution-detailed {
+  font-family: 'Sora', sans-serif;
+}
+
+.solution-detailed-title,
+.solution-feature-content h3,
+.solution-initiatives h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.feature-title {
+  text-decoration: none;
+  color: #1a1a1a; /* dark text color */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.feature-title:hover {
+  color: #ff801f; /* change to your preferred hover color */
+  border-bottom: 2px solid #ff7c2b; /* underline on hover */
+}

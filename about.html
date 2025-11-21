@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pangolin</title>
+  <link rel="icon" type="image/png" href="assets/hlogo.jpg" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+  <script src="nav.js"></script>
+<!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav + Search wrapper -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+<li class="dropdown">
+  <a href="solution.html">Solutions</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Platform Features</h4>
+
+      <a href="wage.html" class="mega-link">
+        <span class="icon">💸</span>
+        <div class="text">
+          <div class="title">On-Time Wage Access</div>
+          <div class="desc">Digitally disburse wages directly.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-2" class="mega-link">
+        <span class="icon">🚑</span>
+        <div class="text">
+          <div class="title">Emergency Microloans</div>
+          <div class="desc">Low-interest loans via the app.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">📅</span>
+        <div class="text">
+          <div class="title">Digital Leave Requests</div>
+          <div class="desc">Leave requests without fear or bias.</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <h4>Productivity & Trust</h4>
+
+      <a href="solution.html#feature-4" class="mega-link">
+        <span class="icon">⏱️</span>
+        <div class="text">
+          <div class="title">Attendance Tracking</div>
+          <div class="desc">QR or biometric clock-ins, real-time logs.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-5" class="mega-link">
+        <span class="icon">🏪</span>
+        <div class="text">
+          <div class="title">Cash-Out via Local Vendors</div>
+          <div class="desc">Withdraw wages without high fees.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-6" class="mega-link">
+        <span class="icon">🤝</span>
+        <div class="text">
+          <div class="title">Job Matching Tool</div>
+          <div class="desc">Match to new jobs via verified history.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</li>
+
+
+
+          <li><a href="#">Our Partners</a></li>
+          <li><a href="about.html">About Us</a></li>
+
+          <li class="dropdown">
+  <a href="#">Services</a>
+  <div class="dropdown-mega">
+    <div class="column">
+      <h4>Overview</h4>
+      <p>Learn how to support industries with On-Demand Pay.</p>
+      <hr class="dropdown-separator" />
+      <a href="#">Hospitals & Healthcare</a>
+      <a href="#">Retail</a>
+      <a href="#">Restaurants & QSR</a>
+      <a href="#">Travel & Hospitality</a>
+      <a href="#">Franchise</a>
+      <a href="#">Grocers & Supermarkets</a>
+      <a href="#">Call & Contact Centers</a>
+      <a href="#">Manufacturing</a>
+      <a href="#">Public Sector</a>
+    </div>
+    <div class="column"></div>
+  </div>
+</li>
+
+
+
+          <li class="dropdown">
+            <a href="#">Help</a>
+            <div class="dropdown-mega">
+              <div class="column">
+                <a href="#">PIN Reset</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Nagad Sheba</a>
+                <a href="#">Distributor locator</a>
+              </div>
+              <div class="column">
+                <a href="#">Limit and Charges</a>
+                <a href="#">Web Self Care</a>
+                <a href="#">Merchant locator</a>
+                <a href="#">Discontinued Uddokta</a>
+              </div>
+              <div class="column">
+                <a href="#">Nagad Transaction Calculator</a>
+                <a href="#">Virtual Number</a>
+                <a href="#">Uddokta locator</a>
+                <a href="#">Discontinued Distributor</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!-- END NAVBAR -->
+
+
+
+
+<section class="about-hero">
+  <!-- Left Side: Text + Bottom Row -->
+  <div class="about-text">
+    <h1>Hard Work<br>Pays Off<br>On the Daily.</h1>
+    
+    <div class="bubble-row bottom-left">
+      <img src="assets/sbro.png" alt="Worker 4" />
+      <img src="assets/mapu.png" alt="Worker 5" />
+      <img src="assets/shan.jpg" alt="Worker 6" />
+    </div>
+  </div>
+
+  <!-- Right Side: Top Row + Video -->
+  <div class="media-cluster">
+    <div class="bubble-row top">
+      <img src="assets/sbro.png" alt="Worker 1" />
+      <img src="assets/mapu.png" alt="Worker 2" />
+      <img src="assets/shan.jpg" alt="Worker 3" />
+    </div>
+
+    <div class="main-video">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="about-impact">
+  <div class="impact-curve"></div>
+
+  <p class="impact-intro">
+    We started with a simple idea: revolutionize how people get paid. But soon we realized we were onto something much bigger. Now, we’re laying a foundation to create more opportunities for employees and employers to win together.
+  </p>
+
+  <div class="impact-stats">
+    <div class="stat">
+      <h2 class="value teal">1000+</h2>
+      <p class="label">clients served on the daily</p>
+    </div>
+    <div class="stat">
+      <h2 class="value magenta">+5M</h2>
+      <p class="label">employees have access to DailyPay</p>
+    </div>
+    <div class="stat">
+      <h2 class="value orange">+$42M</h2>
+      <p class="label">saved by DailyPay users</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="leaders-section">
+  <h2>Meet Our Leaders</h2>
+  <p class="subheading">Our Board of Directors <span>&rsaquo;</span></p>
+  <div class="leaders-grid">
+    
+    
+    <div class="leader-card" id="mayeesha">
+      <div class="avatar-wrapper light-blue">
+        <img src="assets/mapu.png" alt="Stacy Greiner">
+      </div>
+      <div class="quote">“Growing up working at my family’s small business, I saw firsthand how prioritizing customers' needs led to lasting success.”</div>
+      <h3>Mayeesha Farzana Khan</h3>
+      <p class="title">Chief Executive Officer</p>
+    </div>
+
+    
+    <div class="leader-card" id="sukkhokon">
+      <div class="avatar-wrapper light-blue">
+        <img src="assets/sbro.png" alt="Stacy Greiner">
+      </div>
+      <div class="quote">“Growing up working at my family’s small business, I saw firsthand how prioritizing customers' needs led to lasting success.”</div>
+      <h3>Sukkhokon Ahmed</h3>
+      <p class="title">Chief Executive Officer</p>
+    </div>
+
+    <div class="leader-card" id="shan">
+      <div class="avatar-wrapper peach">
+        <img src="assets/shan.jpg" alt="David Dyar">
+      </div>
+      <div class="quote">“My personal experiences have taught me that timing is everything when it comes to finances. Now, we're putting that timing in the hands of hardworking individuals.”</div>
+      <h3>Tahsin Hasan Shan</h3>
+      <p class="title">Chief Technology Officer</p>
+    </div>
+
+    <div class="leader-card">
+      <div class="avatar-wrapper peach">
+        <img src="assets/shan.jpg" alt="David Dyar">
+      </div>
+      <div class="quote">“My personal experiences have taught me that timing is everything when it comes to finances. Now, we're putting that timing in the hands of hardworking individuals.”</div>
+      <h3>Tahsin Hasan Shan</h3>
+      <p class="title">Chief Technology Officer</p>
+    </div>
+
+    <div class="leader-card">
+      <div class="avatar-wrapper peach">
+        <img src="assets/shan.jpg" alt="David Dyar">
+      </div>
+      <div class="quote">“My personal experiences have taught me that timing is everything when it comes to finances. Now, we're putting that timing in the hands of hardworking individuals.”</div>
+      <h3>Tahsin Hasan Shan</h3>
+      <p class="title">Chief Technology Officer</p>
+    </div>
+
+    <div class="leader-card">
+      <div class="avatar-wrapper light-blue">
+        <img src="assets/mapu.png" alt="Stacy Greiner">
+      </div>
+      <div class="quote">“Growing up working at my family’s small business, I saw firsthand how prioritizing customers' needs led to lasting success.”</div>
+      <h3>Mayeesha Farzana Khan</h3>
+      <p class="title">Chief Executive Officer</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="purpose-section">
+  <div class="purpose-content">
+    <h2>Progress With Purpose —<br>That’s the DailyPay Way</h2>
+    <p>
+      We’re not just pushing tech forward, we’re improving lives with every innovation. 
+      Want your skills to drive meaningful change? Join a team where your work truly matters.
+    </p>
+    <a href="#" class="btn">See Our Open Roles</a>
+  </div>
+
+  <div class="purpose-images">
+    <img src="assets/worker.png" class="circle img1" alt="">
+    <img src="assets/shan.jpg" class="circle img2" alt="">
+    <img src="assets/mapu.png" class="circle img3" alt="">
+    <img src="assets/sbro.png" class="circle img4" alt="">
+  </div>
+</section>
+
+
+
+<section class="why-choose">
+  <div class="container">
+    <h2>See Why Top Companies Choose Pangolin</h2>
+    <button class="talk-btn">Let's Talk</button>
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/empower.png" alt="Empowering Icon" />
+          <h3>Empowering for Employees</h3>
+        </div>
+        <p>Greater financial control with access to up to 100% of their Pangolin balance to meet the challenges of unexpected financial disruptions.</p>
+        <hr>
+        <p>Improved planning with visibility to withdrawals and earned pay in one easy-to-use app.</p>
+        <hr>
+        <p>No need for a pre-existing checking or savings account.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/secure.png" alt="Secure Icon" />
+          <h3>Simple and Secure for Employers</h3>
+        </div>
+        <p>No change to payroll processes — Pangolin compliantly handles it all.</p>
+        <hr>
+        <p>Seamless integration with HCM, payroll, banking and benefit applications.</p>
+        <hr>
+        <p>Enterprise-grade platform that keeps data private and the service running so it's always there when your employees need it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="trusted-section">
+  <h3>TRUSTED BY LEADING COMPANIES</h3>
+  <div class="logo-row">
+    <img src="assets/cocacola.svg" alt="company1">
+    <img src="assets/tesla-motors.svg" alt="company1">
+    <img src="assets/tailwind-css-2.svg" alt="company1">
+    <img src="assets/c--4.svg" alt="company1">
+    <img src="assets/google-g-2015.svg" alt="company1">
+  </div>
+</section>
+
+
+
+<!-- Chatbot: Rollie -->
+<div class="chatbot-container" id="chatbot">
+  <div class="chatbot-header">
+    <span>Rollie 🤖</span>
+    <button id="chatbot-close">&times;</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages">
+    <div class="message bot">Hi! I’m Rollie, your assistant here.</div>
+  </div>
+  <div class="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Type a message..." />
+    <button id="chatbot-send">➤</button>
+  </div>
+</div>
+
+<!-- Bot Icon -->
+<div id="chatbot-icon">
+  <img src="assets/bot.png" alt="Chatbot Icon" height="100px"/>
+</div>
+
+<script src="chatbot.js"></script>
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Pangolin Logo" class="footer-logo" />
+      <p><strong>Pangolin HQ</strong><br>
+      Savar, Dhaka<br>
+      Bangladesh</p>
+      <a href="#" class="footer-contact">Contact us ></a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Impact</a>
+        <a href="#">Careers</a>
+        <a href="#">Awards</a>
+        <a href="#">Security</a>
+      </div>
+      <div>
+        <h4>For Employers</h4>
+        <a href="#">Overview</a>
+        <a href="#">Why Pangolin</a>
+        <a href="#">Clients</a>
+        <a href="#">Industries</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div>
+        <h4>Platform & Features</h4>
+        <a href="#">Pangolin Platform</a>
+        <a href="#">Cycle</a>
+        <a href="#">Reward</a>
+        <a href="#">Tips</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Calculator</a>
+        <a href="#">Education</a>
+        <a href="#">On-Demand Pay</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

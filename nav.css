@@ -1,0 +1,259 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 25px 3px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}
+
+.logo-link {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* slightly bigger gap for bigger links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #191919;
+  transition: color 0.3s ease;
+  font-weight: 600; /* semi-bold */
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.08rem; /* increased size */
+}
+
+.nav-links a:hover {
+  color: #ff7e39;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-mega {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  min-width: 600px;
+  max-width: 90vw;
+  gap: 30px;
+  white-space: nowrap;
+}
+
+/* Removed this to avoid overriding JS */
+// .dropdown:hover .dropdown-mega {
+//   display: flex;
+// }
+
+.dropdown-mega .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-mega h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dropdown-mega a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.solutions-mega {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+  padding: 30px 40px;
+  min-width: 700px;
+  display: flex;
+  gap: 40px;
+  border-radius: 6px;
+}
+
+.dropdown:hover .solutions-mega {
+  display: flex;
+}
+
+.solutions-mega .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.solutions-mega h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.mega-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #222;
+  transition: background 0.2s ease;
+}
+
+.mega-link:hover {
+  background-color: #f0f0f0;
+}
+
+.mega-link .icon {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.mega-link .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-link .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mega-link .desc {
+  font-size: 12px;
+  color: #a2a2a2;
+}
+
+/* Search */
+.search-container input {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #222;
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    z-index: 1000;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .dropdown-mega {
+    display: none !important; /* Disable dropdowns on touch/mobile */
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+}

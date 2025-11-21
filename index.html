@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCPSC IT Club</title>
+  <link rel="icon" type="image/png" href="assets/hlogo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+
+</head>
+<body>
+  <script src="nav.js"></script>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav + Search wrapper -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+<li class="dropdown">
+  <a href="solution.html">Sectors</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Our Sectors</h4>
+
+      <a href="wage.html" class="mega-link">
+        <span class="icon">🧠</span>
+        <div class="text">
+          <div class="title">Quiz & Olympiad Excellence</div>
+          <div class="desc">Master global-level quizzes with expert-curated training and challenges.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-2" class="mega-link">
+        <span class="icon">💻</span>
+        <div class="text">
+          <div class="title">Programming & Coding Mastery</div>
+          <div class="desc">Learn coding from fundamentals to advanced concepts with hands-on projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🤖</span>
+        <div class="text">
+          <div class="title">Robotics & Innovation Lab</div>
+          <div class="desc">Explore robotics through practical builds and exciting upcoming tech projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🎨</span>
+        <div class="text">
+          <div class="title">Creative Graphics & Visual Design</div>
+          <div class="desc">Develop stunning visual content with modern design tools and techniques.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+
+
+
+
+         
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact Us</a></li>
+
+         
+
+
+
+        
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+  <div class="hero-text">
+    <h1>Learn, Create,<br>Innovate & Excel</h1>
+    <h2>Join Our IT Club and Master Skills<br>Across Coding, Robotics & Design</h2>
+    <p>Our club provides hands-on projects, workshops, and challenges to help students gain real-world IT skills and grow their problem-solving abilities.</p>
+    <button class="cta-button">Join Now</button>
+  </div>
+  <div class="hero-video">
+    <div class="video-mask">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION: Platform with SVG background -->
+<section class="platform-wrapper">
+  <svg class="platform-curve" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#f5f5f5" fill-opacity="1" d="M0,64L1440,0L1440,320L0,320Z"></path>
+  </svg>
+
+  <section class="platform">
+    <!-- IMAGE FIRST -->
+    <div class="platform-image-only">
+      <img src="assets/worker.png" alt="Student Coding" class="worker-only-img" height="300px" width="500px"/>
+    </div>
+
+    <!-- TEXT SECOND -->
+    <div class="platform-text">
+      <p>
+        <strong class="highlight">Our IT Club</strong> empowers students to learn coding, robotics, and creative design through hands-on projects and collaborative challenges. Members gain skills, confidence, and a real-world edge.
+      </p>
+
+      <a href="club.html">
+        <button class="platform-btn">Explore Club</button>
+      </a>
+    </div>
+  </section>
+</section>
+
+
+
+
+<section class="trusted-section">
+  <div class="trusted-text">TRUSTED BY TEAMS AT</div>
+  <div class="logo-slider">
+    <div class="logo-track">
+      <img src="assets/logo1.png" alt="Company 1" />
+      <img src="assets/logo2.png" alt="Company 2" />
+      <img src="assets/logo3.png" alt="Company 3" />
+      <img src="assets/logo4.png" alt="Company 4" />
+      <img src="assets/logo5.png" alt="Company 5" />
+      <img src="assets/logo6.png" alt="Company 6" />
+      <img src="assets/logo7.png" alt="Company 7" />
+      <img src="assets/logo8.png" alt="Company 8" />
+
+      <!-- Duplicate logos for seamless loop -->
+      <img src="assets/logo1.png" alt="Company 1" />
+      <img src="assets/logo2.png" alt="Company 2" />
+      <img src="assets/logo3.png" alt="Company 3" />
+      <img src="assets/logo4.png" alt="Company 4" />
+    </div>
+  </div>
+</section>
+
+
+<section class="stat-section">
+  <div class="stat-content">
+    <div class="stat-text">
+      <h2>Empowering Students,<br>Building Skills and Confidence</h2>
+      <p>
+        Our IT club transforms learners into tech leaders by providing hands-on projects, workshops, and competitions that foster growth, innovation, and real-world problem-solving skills.
+      </p>
+      <a href="#" class="highlight-link">Discover how we empower students &gt;</a>
+    </div>
+
+    <div class="stat-media">
+      <video autoplay muted loop playsinline class="stat-video" height="300px" width="500px">
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="impact-section">
+  <img src="assets/cartoon.png" alt="Students Learning" class="impact-top-img" height="1000"/>
+
+  <div class="impact-container">
+    <div class="impact-text">
+      <h2>Skills in Action for Students</h2>
+      <p>
+        Our workshops, competitions, and hands-on projects show measurable improvements<br />
+        in student learning, creativity, and problem-solving abilities.
+      </p>
+      <a href="#" class="report-link">See Student Achievements &rsaquo;</a>
+    </div>
+
+    <div class="impact-stats">
+      <div class="stat-item">
+        <h3>95%</h3>
+        <p>
+          of students reported improved understanding of coding and robotics<br />
+          after participating in our club programs.
+        </p>
+      </div>
+      <div class="stat-item">
+        <h3>88%</h3>
+        <p>
+          of members credit the IT club for boosting confidence and collaborative skills.
+        </p>
+      </div>
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>
+          number of workshops, competitions, and projects conducted<br />
+          in the last academic year.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="adoption-section">
+  <div class="adoption-card">
+    <div class="adoption-left">
+      <p class="section-label">Active Engagement</p>
+      <h2>Commitment to Student Participation</h2>
+    </div>
+    <div class="adoption-right">
+      <p>
+        Our IT club ensures students get hands-on experience through workshops,
+        coding challenges, robotics projects, and competitions. We guide members
+        from learning fundamentals to applying skills in real-world projects,
+        fostering creativity, collaboration, and innovation.
+      </p>
+    </div>
+  </div>
+
+  <div class="adoption-icons">
+    <div class="icon-box">
+      <img src="assets/bulb.png" alt="Implementation" />
+      <h4>Interactive<br>Workshops</h4>
+    </div>
+    <div class="icon-box">
+      <img src="assets/gear.png" alt="No retooling" />
+      <h4>Hands-On<br>Projects</h4>
+    </div>
+    <div class="icon-box">
+      <img src="assets/clock.png" alt="Ready fast" />
+      <h4>Quick Skill<br>Progress</h4>
+    </div>
+  </div>
+</section>
+
+ <section class="testimonial-section">
+  <div class="testimonial-wrapper">
+    <div class="testimonial-carousel">
+      <!-- Person 1 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <h4 class="title">Future Innovator</h4>
+          <p class="info">Excels in coding competitions and robotics challenges.</p>
+          <p class="name">Sukkhokon Ahmed, Club President</p>
+          <a href="about.html#sukkhokon" class="more">More about Sukkhokon <span>+</span></a>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/sbro.png" alt="Sukkhokon Ahmed">
+        </div>
+      </div>
+
+      <!-- Person 2 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <h4 class="title">Creative Mind</h4>
+          <p class="info">Expert in visual design and digital content creation.</p>
+          <p class="name">Mayeesha Farzana Khan, Head of Design</p>
+          <a href="about.html#mayeesha" class="more">More about Mayeesha <span>+</span></a>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/mapu.png" alt="Mayeesha Farzana Khan">
+        </div>
+      </div>
+
+      <!-- Person 3 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <h4 class="title">Tech Enthusiast</h4>
+          <p class="info">Passionate about AI, web development, and tech innovations.</p>
+          <p class="name">Tahsin Hasan, Founder & General Secretary</p>
+          <a href="about.html#shan" class="more">More about Tahsin <span>+</span></a>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/shan.jpg" alt="Tahsin Hasan">
+        </div>
+      </div>
+
+      <!-- Person 4 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <h4 class="title">Problem Solver</h4>
+          <p class="info">Specializes in IoT projects and practical solutions for local communities.</p>
+          <p class="name">Arif Rahman, Tech Lead</p>
+          <a href="#" class="more">More about Arif <span>+</span></a>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/person4.png" alt="Arif Rahman">
+        </div>
+      </div>
+
+      <!-- Person 5 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-text">
+          <h4 class="title">Coding Wizard</h4>
+          <p class="info">Excels in competitive programming and AI-based projects.</p>
+          <p class="name">Nabila Akter, Software Lead</p>
+          <a href="#" class="more">More about Nabila <span>+</span></a>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/person5.png" alt="Nabila Akter">
+        </div>
+      </div>
+    </div>
+
+    <!-- Dot navigation -->
+    <div class="testimonial-dots"></div>
+  </div>
+</section>
+
+
+
+<section class="why-choose">
+  <div class="container">
+    <h2>See Why Students Love Our IT Club</h2>
+    <button class="talk-btn">Join Us</button>
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/empower.png" alt="Empowering Icon" />
+          <h3>Empowering for Students</h3>
+        </div>
+        <p>Gain hands-on experience in coding, robotics, design, and quizzes to build real-world skills and confidence.</p>
+        <hr>
+        <p>Structured guidance helps students plan and execute projects effectively, improving problem-solving abilities.</p>
+        <hr>
+        <p>No prior knowledge required—everyone can join and grow at their own pace.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/secure.png" alt="Secure Icon" />
+          <h3>Simple and Supportive for Mentors</h3>
+        </div>
+        <p>Mentors can easily guide students through challenges without overcomplicating workflows.</p>
+        <hr>
+        <p>Seamless integration of workshops, competitions, and hands-on sessions keeps activities organized and impactful.</p>
+        <hr>
+        <p>A safe and collaborative environment ensures data, projects, and student progress remain secure and tracked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="IT Club Logo" class="footer-logo" />
+      <p><strong>Savar Cantonment Public School & College IT Club</strong><br>
+      Savar, Dhaka<br>
+      Bangladesh</p>
+      <a href="#" class="footer-contact">Contact us ></a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Club</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Projects</a>
+        <a href="#">Membership</a>
+        <a href="#">Events</a>
+        <a href="#">Achievements</a>
+      </div>
+      <div>
+        <h4>For Students</h4>
+        <a href="#">Workshops</a>
+        <a href="#">Competitions</a>
+        <a href="#">Mentorship</a>
+        <a href="#">Resources</a>
+        <a href="#">Guides</a>
+      </div>
+      <div>
+        <h4>Learning & Practice</h4>
+        <a href="#">Coding</a>
+        <a href="#">Robotics</a>
+        <a href="#">Design</a>
+        <a href="#">Quizzes</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Contact</a>
+        <a href="#">Helpdesk</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
