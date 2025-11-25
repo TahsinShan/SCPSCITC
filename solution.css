@@ -146,7 +146,7 @@ html {
 }
 
 .routine-grid img {
-  max-width: 600px;   /* limit max width */
+  max-width: 400px;   /* limit max width */
   width: 100%;        /* allow image to shrink responsively */
   flex: 1 1 300px;    /* basis of 300px, flex-grow/shrink */
   border-radius: 20px;
