@@ -90,3 +90,106 @@
     gap: 30px;
   }
 }
+
+
+
+
+
+.why-choose {
+  background: #fceee7;
+  padding: 80px 20px;
+}
+
+.why-choose .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 40px;
+  color: #0a143a;
+}
+
+.talk-btn {
+  background: #0a143a;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Desktop positioning */
+@media (min-width: 768px) {
+  .talk-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(50%);
+    margin-top: 0;
+  }
+}
+
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .benefits {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title img {
+  width: 24px;
+  height: 24px;
+}
+
+.card-title h3 {
+  font-size: 1.2rem;
+  color: #0a143a;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card p {
+  color: #0a143a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+
