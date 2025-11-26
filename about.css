@@ -392,9 +392,9 @@ html{
 /* Bigger + Closer Circles */
 .img1 {
   top: 0;
-  right: 20px;
-  width: 200px;
-  height: 200px;
+  right: 30px;
+  width: 210px;
+  height: 210px;
   z-index: 3;
 }
 
