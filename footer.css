@@ -38,8 +38,16 @@
 
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: 15px;
+}
+.social-icons a {
+  color: #000; /* or your default color */
+  transition: color 0.3s ease; /* makes hover smooth */
+}
+
+.social-icons a:hover {
+  color: #f36021;
 }
 
 .social-icons a {
@@ -109,7 +117,7 @@
 
 .why-choose h2 {
   font-size: 2rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Exo 2','Georgia', serif;
   margin-bottom: 40px;
   color: #0a143a;
 }

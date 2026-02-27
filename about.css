@@ -23,8 +23,8 @@ html{
 }
 
 .about-text h1 {
-  font-family: 'Georgia', serif;
-  font-size: 76px;
+  font-family: 'Exo 2', serif;
+  font-size: 70px;
   font-weight: 600;
   color: #0a0a23;
   line-height: 1;
@@ -226,7 +226,7 @@ html{
   font-size: 42px;
   font-weight: 700;
   color: #0a0a23;
-  font-family: Georgia, serif;
+  font-family: 'Exo 2', serif;
 }
 
 .subheading {
@@ -234,6 +234,7 @@ html{
   font-weight: 600;
   margin-top: 8px;
   font-size: 18px;
+ 
 }
 
 .leaders-grid {
@@ -347,7 +348,7 @@ html{
   font-size: 42px;
   font-weight: 700;
   color: #0a0a23;
-  font-family: Georgia, serif;
+  font-family: 'Exo 2', serif;
   margin-bottom: 20px;
 }
 
@@ -356,6 +357,7 @@ html{
   line-height: 1.7;
   color: #2d2e32;
   margin-bottom: 30px;
+  font-family: 'Exo 2', serif;
 }
 
 .purpose-content .btn {
@@ -368,11 +370,11 @@ html{
   border-radius: 50px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
 }
 
 .purpose-content .btn:hover {
-  background-color: #ff8d02;
+  background-color: #bc5fff;
 }
 
 .purpose-images {

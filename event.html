@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCPSC IT Club</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+
+
+  <style>
+    /* HERO */
+.events-hero {
+  background: linear-gradient(90deg,rgba(54, 195, 255, 1) 0%, rgba(201, 245, 225, 1) 69%, rgba(128, 255, 193, 1) 100%);
+  color: rgb(0, 13, 158);
+  padding: 120px 8%;
+  text-align: center;
+}
+
+.events-hero h1 {
+  font-family: 'Poiret One', serif;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.events-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* EVENTS SECTION */
+.events-section {
+  padding: 120px 8%;
+  background: #f5f5f5;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Exo 2', serif;
+  color: #0a0a23;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.event-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  transition: all 0.4s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* IMAGE AREA */
+.event-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+/* DATE BADGE */
+.event-date-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff6709;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* TAG */
+.event-tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #4aa7ff;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.event-tag.robotics {
+  background: #ff72f1;
+}
+
+.event-tag.design {
+  background: #ff7777;
+}
+
+/* CONTENT */
+.event-content {
+  padding: 30px;
+}
+
+.event-content h3 {
+  font-size: 22px;
+  color: #0a0a23;
+  margin-bottom: 15px;
+}
+
+.event-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.event-btn {
+  background: #0a0a23;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event-btn:hover {
+  background: #e95d0f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* PAST EVENTS */
+.past-events {
+  padding: 100px 8%;
+  background: #f5f5f5;
+}
+
+.past-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.past-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.past-item img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.past-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(10,10,35,0.8);
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* CTA */
+.events-cta {
+  background: white;
+  padding: 120px 8%;
+  text-align: center;
+}
+
+.events-cta h2 {
+  font-size: 40px;
+  font-family: 'Exo 2', serif;
+  color: #0a0a23;
+  margin-bottom: 20px;
+}
+
+.events-cta p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .event-grid, .past-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+
+
+
+
+
+
+</head>
+<body>
+  <script src="nav.js"></script>
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" class="logo-link" >
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav + Search wrapper -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+  <a href="solution.html">Sectors</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Our Sectors</h4>
+
+      <a href="solution.html#feature-1" class="mega-link">
+        <span class="icon">🧠</span>
+        <div class="text">
+          <div class="title">Quiz & Olympiad Excellence</div>
+          <div class="desc">Master global-level quizzes with expert-curated training and challenges.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-2" class="mega-link">
+        <span class="icon">💻</span>
+        <div class="text">
+          <div class="title">Programming & Coding Mastery</div>
+          <div class="desc">Learn coding from fundamentals to advanced concepts with hands-on projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🤖</span>
+        <div class="text">
+          <div class="title">Robotics & Innovation Lab</div>
+          <div class="desc">Explore robotics through practical builds and exciting upcoming tech projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🎨</span>
+        <div class="text">
+          <div class="title">Creative Graphics & Visual Design</div>
+          <div class="desc">Develop stunning visual content with modern design tools and techniques.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+
+
+
+
+         
+         
+          <li class="dropdown">
+  <a href="executive.html">Executives</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Our Committees</h4>
+
+      <a href="executive.html#1" class="mega-link">
+        <div class="text">
+          <div class="title">1st Committee</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+          <li><a href="event.html"  class="active">Events</a></li>
+          <li><a href="contact.html">Contact Us</a></li>        
+    </nav>
+  </header>
+
+
+
+<!-- HERO -->
+<section class="events-hero">
+  <div class="events-hero-text">
+    <h1>Our Events</h1>
+    <p>Workshops, Competitions & Innovation Challenges that shape future tech leaders.</p>
+  </div>
+</section>
+
+
+<!-- UPCOMING EVENTS -->
+<section class="events-section">
+  <h2 class="section-title">Upcoming Events</h2>
+
+  <div class="event-grid">
+
+    <!-- Event 1 -->
+    <div class="event-card">
+      <div class="event-image">
+        <img src="assets/sg-1-1.jpg" alt="Coding Olympiad">
+        <span class="event-tag">Programming</span>
+        <div class="event-date-badge">25 Mar 2026</div>
+      </div>
+
+      <div class="event-content">
+        <h3>National Coding Olympiad</h3>
+        <p>Test your programming skills and compete with the brightest minds.</p>
+        <button class="event-btn">Register Now</button>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <div class="event-image">
+        <img src="assets/sg-5.jpg" alt="Robotics Bootcamp">
+        <span class="event-tag robotics">Robotics</span>
+        <div class="event-date-badge">10 Apr 2026</div>
+      </div>
+
+      <div class="event-content">
+        <h3>Robotics Bootcamp</h3>
+        <p>Build, code and control real robotic systems with hands-on guidance.</p>
+        <button class="event-btn">Register Now</button>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+      <div class="event-image">
+        <img src="assets/sg-2.png" alt="Design Workshop">
+        <span class="event-tag design">Design</span>
+        <div class="event-date-badge">22 Apr 2026</div>
+      </div>
+
+      <div class="event-content">
+        <h3>Creative Design Workshop</h3>
+        <p>Learn modern UI/UX and graphic design tools from industry mentors.</p>
+        <button class="event-btn">Register Now</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PAST EVENTS -->
+<section class="past-events">
+  <h2 class="section-title">Past Highlights</h2>
+
+  <div class="past-grid">
+    <div class="past-item">
+      <img src="assets/us.jpg" alt="">
+      <div class="overlay">Tech Fest 2024</div>
+    </div>
+
+    <div class="past-item">
+      <img src="assets/sg-1-1.jpg" alt="">
+      <div class="overlay">AI Workshop</div>
+    </div>
+
+    <div class="past-item">
+      <img src="assets/sg-2.png" alt="">
+      <div class="overlay">Inter School Quiz</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="events-cta">
+  <h2>Be Part of Innovation</h2>
+  <p>Join our next event and start building your tech future today.</p>
+  <button class="cta-button">Join Now</button>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="why-choose">
+  <div class="container">
+    <h2>See Why Students Love Our IT Club</h2>
+    <button class="talk-btn">Join Us</button>
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/empower.png" alt="Empowering Icon" />
+          <h3>Empowering for Students</h3>
+        </div>
+        <p>Gain hands-on experience in coding, robotics, design, and quizzes to build real-world skills and confidence.</p>
+        <hr>
+        <p>Structured guidance helps students plan and execute projects effectively, improving problem-solving abilities.</p>
+        <hr>
+        <p>No prior knowledge required—everyone can join and grow at their own pace.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/secure.png" alt="Secure Icon" />
+          <h3>Simple and Supportive for Mentors</h3>
+        </div>
+        <p>Mentors can easily guide students through challenges without overcomplicating workflows.</p>
+        <hr>
+        <p>Seamless integration of workshops, competitions, and hands-on sessions keeps activities organized and impactful.</p>
+        <hr>
+        <p>A safe and collaborative environment ensures data, projects, and student progress remain secure and tracked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="IT Club Logo" class="footer-logo" />
+      <p><strong>Savar Cantonment Public School & College IT Club</strong><br>
+      Savar, Dhaka<br>
+      Bangladesh</p>
+      <a href="#" class="footer-contact">Contact us ></a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:demo@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Club</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Projects</a>
+        <a href="#">Events</a>
+        <a href="#">Achievements</a>
+      </div>
+      <div>
+        <h4>For Students</h4>
+        <a href="#">Workshops</a>
+        <a href="#">Competitions</a>
+        <a href="#">Mentorship</a>
+        <a href="#">Resources</a>
+        <a href="#">Guides</a>
+      </div>
+      <div>
+        <h4>Learning & Practice</h4>
+        <a href="solution.html#feature-2">Coding</a>
+        <a href="solution.html#feature-3">Robotics</a>
+        <a href="solution.html#feature-4">Design</a>
+        <a href="solution.html#feature-1">Quizzes</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Blog</a>
+        <a href="solution.html#faq">FAQs</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

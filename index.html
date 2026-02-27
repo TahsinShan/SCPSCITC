@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="chatbot.css" />
   <link rel="stylesheet" href="nav.css" />
@@ -22,7 +24,7 @@
     <nav class="navbar">
       <!-- Logo -->
       <div class="logo">
-        <a href="index.html" class="logo-link">
+        <a href="index.html" class="logo-link" >
           <img src="assets/logo.png" alt="Logo" height="50" />
         </a>
       </div>
@@ -37,7 +39,7 @@
       <!-- Nav + Search wrapper -->
       <div class="nav-right">
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
            <li><a href="about.html">About Us</a></li>
 <li class="dropdown">
   <a href="solution.html">Sectors</a>
@@ -101,8 +103,8 @@
     </div>
   </div>
 </li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
 
          
 
@@ -124,7 +126,7 @@
   <div class="hero-video">
     <div class="video-mask">
       <video autoplay muted loop playsinline>
-        <source src="assets/video.mp4" type="video/mp4" />
+        <source src="assets/intro.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -134,9 +136,7 @@
 
 <!-- SECTION: Platform with SVG background -->
 <section class="platform-wrapper">
-  <svg class="platform-curve" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <path fill="#f5f5f5" fill-opacity="1" d="M0,64L1440,0L1440,320L0,320Z"></path>
-  </svg>
+  
 
   <section class="platform">
     <!-- IMAGE FIRST -->
@@ -150,7 +150,7 @@
         <strong class="highlight">Our IT Club</strong> helps students learn  various sides of IT the through four sectors.of Robotics, Programming,  Creative designs and quizez.
       </p>
 
-      <a href="club.html">
+      <a href="solution.html">
         <button class="platform-btn">Explore Club</button>
       </a>
     </div>
@@ -190,12 +190,12 @@
       <p>
         Our IT club transforms learners into tech leaders by providing hands-on projects, workshops, and competitions that foster growth, innovation, and real-world problem-solving skills.
       </p>
-      <a href="#" class="highlight-link">Discover how we empower students &gt;</a>
+      <a href="solution.html" class="highlight-link">Discover how we empower students &gt;</a>
     </div>
 
     <div class="stat-media">
       <video autoplay muted loop playsinline class="stat-video" height="300px" width="500px">
-        <source src="assets/video.mp4" type="video/mp4" />
+        <source src="assets/intro.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -402,10 +402,10 @@
       <a href="#" class="footer-contact">Contact us ></a>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:demo@example.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
@@ -414,7 +414,6 @@
         <h4>Club</h4>
         <a href="about.html">About Us</a>
         <a href="#">Projects</a>
-        <a href="#">Membership</a>
         <a href="#">Events</a>
         <a href="#">Achievements</a>
       </div>
@@ -428,18 +427,16 @@
       </div>
       <div>
         <h4>Learning & Practice</h4>
-        <a href="#">Coding</a>
-        <a href="#">Robotics</a>
-        <a href="#">Design</a>
-        <a href="#">Quizzes</a>
+        <a href="solution.html#feature-2">Coding</a>
+        <a href="solution.html#feature-3">Robotics</a>
+        <a href="solution.html#feature-4">Design</a>
+        <a href="solution.html#feature-1">Quizzes</a>
       </div>
       <div>
         <h4>Support</h4>
         <a href="#">Blog</a>
-        <a href="#">FAQs</a>
-        <a href="#">Tutorials</a>
+        <a href="solution.html#faq">FAQs</a>
         <a href="#">Contact</a>
-        <a href="#">Helpdesk</a>
       </div>
     </div>
   </div>

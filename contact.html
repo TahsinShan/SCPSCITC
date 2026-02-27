@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCPSC IT Club</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="chatbot.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="footer.css" />
+
+</head>
+<body>
+  <script src="nav.js"></script>
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" class="logo-link" >
+          <img src="assets/logo.png" alt="Logo" height="50" />
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav + Search wrapper -->
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html" >Home</a></li>
+           <li><a href="about.html">About Us</a></li>
+<li class="dropdown">
+  <a href="solution.html">Sectors</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Our Sectors</h4>
+
+      <a href="solution.html#feature-1" class="mega-link">
+        <span class="icon">🧠</span>
+        <div class="text">
+          <div class="title">Quiz & Olympiad Excellence</div>
+          <div class="desc">Master global-level quizzes with expert-curated training and challenges.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-2" class="mega-link">
+        <span class="icon">💻</span>
+        <div class="text">
+          <div class="title">Programming & Coding Mastery</div>
+          <div class="desc">Learn coding from fundamentals to advanced concepts with hands-on projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🤖</span>
+        <div class="text">
+          <div class="title">Robotics & Innovation Lab</div>
+          <div class="desc">Explore robotics through practical builds and exciting upcoming tech projects.</div>
+        </div>
+      </a>
+
+      <a href="solution.html#feature-3" class="mega-link">
+        <span class="icon">🎨</span>
+        <div class="text">
+          <div class="title">Creative Graphics & Visual Design</div>
+          <div class="desc">Develop stunning visual content with modern design tools and techniques.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+
+
+
+
+         
+         
+          <li class="dropdown">
+  <a href="executive.html">Executives</a>
+  <div class="dropdown-mega solutions-mega">
+    <div class="column">
+      <h4>Our Committees</h4>
+
+      <a href="executive.html#1" class="mega-link">
+        <div class="text">
+          <div class="title">1st Committee</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        
+    </nav>
+  </header>
+
+
+<!-- ===================== CONTACT PAGE ===================== -->
+
+<!-- ===== HERO ===== -->
+<section class="contact-hero">
+  <div class="contact-overlay"></div>
+  <div class="contact-text">
+    <h1>Contact IT Club</h1>
+    <p>Reach out to us anytime — we're here to support students, members, and collaborators.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- INFO CARD -->
+    <div class="contact-info glass-card">
+      <h2>Get in Touch</h2>
+      <p class="info-text">Feel free to contact us for any queries, club activities, events, or collaboration opportunities.</p>
+
+      <div class="contact-detail">
+        <h4>Email</h4>
+        <p>itclub.scpsc@gmail.com</p>
+      </div>
+
+      <div class="contact-detail">
+        <h4>Phone</h4>
+        <p>+880 1234-567890</p>
+      </div>
+
+      <div class="contact-detail">
+        <h4>Location</h4>
+        <p>Savar Cantonment Public School & College, Savar, Dhaka</p>
+      </div>
+
+      <div class="contact-socials">
+        <a href="#" class="social-btn">Facebook</a>
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">GitHub</a>
+      </div>
+    </div>
+
+    <!-- OPTIONAL MAP / IMAGE -->
+    <div class="contact-map glass-card">
+      <h2>Find Us</h2>
+      <a href="https://maps.app.goo.gl/WQWzunSux8aPV54TA" target="_blank"><img src="assets/map.png" alt="Map" class="map-img"></a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="contact-section">
+
+  <div class="contact-container">
+
+    <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>Have a question or idea? We'd love to hear from you.</p>
+    </div>
+
+    <form action="https://formsubmit.co/scpscitclubofficial@gmail.com" method="POST">
+
+      <!-- Disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" name="Name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" name="Email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Subject *</label>
+        <input type="text" name="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label>Your Message *</label>
+        <textarea name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<style>
+    /* =================== CONTACT HERO =================== */
+.contact-hero {
+  position: relative;
+  height: 45vh;
+  background: url("assets/us.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+}
+
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,rgba(54, 195, 255, 1) 0%, rgba(201, 245, 225, 1) 69%, rgba(128, 255, 193, 1) 100%);
+  backdrop-filter: blur(5px);
+}
+
+.contact-text {
+  position: relative;
+  z-index: 2;
+  color: #000e7b;
+}
+
+.contact-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+}
+
+.contact-text p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #003c5a;
+}
+
+/* =================== CONTACT SECTION =================== */
+.contact-section {
+  padding: 80px 8%;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 35px;
+  border-radius: 20px;
+  color: #fff;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* =================== LEFT INFO =================== */
+.contact-info h2,
+.contact-map h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ff7b24;
+}
+
+.info-text {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #424242;
+}
+
+.contact-detail {
+  margin-bottom: 20px;
+}
+
+.contact-detail h4 {
+  font-size: 1rem;
+  color: #ff7b24;
+  margin-bottom: 5px;
+}
+
+.contact-detail p {
+  font-size: 0.95rem;
+  color: #575757;
+}
+
+.contact-socials {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-btn {
+  padding: 10px 18px;
+  background: #ff7b24;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  background: #ff6000;
+  transform: translateY(-2px);
+}
+
+/* =================== MAP CARD =================== */
+.map-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero {
+    height: 35vh;
+  }
+
+  .contact-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* =================== ANIMATION =================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+/* CONTACT SECTION */
+
+
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  font-family: 'Exo 2', serif;
+  color: #0a0a23;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0a0a23;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-family: 'Exo 2', sans-serif;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e95d0f;
+  box-shadow: 0 0 0 3px rgba(233, 93, 15, 0.1);
+}
+
+/* Button */
+.submit-btn {
+  background: #0a0a23;
+  color: white;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #e95d0f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 25px;
+  }
+
+  .contact-header h2 {
+    font-size: 28px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+<section class="why-choose">
+  <div class="container">
+    <h2>See Why Students Love Our IT Club</h2>
+    <button class="talk-btn">Join Us</button>
+    <div class="benefits">
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/empower.png" alt="Empowering Icon" />
+          <h3>Empowering for Students</h3>
+        </div>
+        <p>Gain hands-on experience in coding, robotics, design, and quizzes to build real-world skills and confidence.</p>
+        <hr>
+        <p>Structured guidance helps students plan and execute projects effectively, improving problem-solving abilities.</p>
+        <hr>
+        <p>No prior knowledge required—everyone can join and grow at their own pace.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <img src="assets/secure.png" alt="Secure Icon" />
+          <h3>Simple and Supportive for Mentors</h3>
+        </div>
+        <p>Mentors can easily guide students through challenges without overcomplicating workflows.</p>
+        <hr>
+        <p>Seamless integration of workshops, competitions, and hands-on sessions keeps activities organized and impactful.</p>
+        <hr>
+        <p>A safe and collaborative environment ensures data, projects, and student progress remain secure and tracked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="IT Club Logo" class="footer-logo" />
+      <p><strong>Savar Cantonment Public School & College IT Club</strong><br>
+      Savar, Dhaka<br>
+      Bangladesh</p>
+      <a href="#" class="footer-contact">Contact us ></a>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Club</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Projects</a>
+        <a href="#">Membership</a>
+        <a href="#">Events</a>
+        <a href="#">Achievements</a>
+      </div>
+      <div>
+        <h4>For Students</h4>
+        <a href="#">Workshops</a>
+        <a href="#">Competitions</a>
+        <a href="#">Mentorship</a>
+        <a href="#">Resources</a>
+        <a href="#">Guides</a>
+      </div>
+      <div>
+        <h4>Learning & Practice</h4>
+        <a href="#">Coding</a>
+        <a href="#">Robotics</a>
+        <a href="#">Design</a>
+        <a href="#">Quizzes</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Contact</a>
+        <a href="#">Helpdesk</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -79,7 +79,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff7e39;
+  color: #ff5900;
 }
 
 /* Dropdown */
@@ -265,4 +265,11 @@ body {
   .hamburger {
     display: flex !important;
   }
+}
+
+
+
+nav a.active {
+  color: rgb(255, 147, 32); /* active link color */
+  font-weight: bold;
 }
